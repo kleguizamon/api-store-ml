@@ -1,0 +1,17 @@
+[
+  {
+    "country": "Argentina",
+    "code": "MLA",
+    "flag": "arg"
+  },
+  {
+    "country": "Brasil",
+    "code": "MBO",
+    "flag": "bra"
+  },
+  {
+    "country": "Colombia",
+    "code": "MCO",
+    "flag": "col"
+  }
+]
