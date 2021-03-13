@@ -10,9 +10,9 @@ function App() {
         src='https://i.postimg.cc/GtqMrWj6/ml-logo.png'
         alt='logoML'
       />
-      <ul>
+      <ul className='ul'>
         {arrCountries.map((value, key) => (
-          <li>
+          <li className='li-font'>
             <Country value={value} key={key} />
           </li>
         ))}

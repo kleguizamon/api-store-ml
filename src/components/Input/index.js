@@ -4,7 +4,7 @@ function Input(props) {
   const [article, setArticle] = useState('');
 
   function handleChange(e) {
-    const { value } = e.tarjet;
+    const { value } = e.target;
     setArticle(value);
     sendChange();
   }

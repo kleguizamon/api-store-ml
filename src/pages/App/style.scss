@@ -3,7 +3,8 @@
 @import '../../scss/variables';
 
 .main {
-  @include flex();
+  @include flex(space-evenly, center);
+  flex-direction: row;
   width: 100vw;
   height: 100vh;
   background-color: $primary-color;
@@ -11,14 +12,16 @@
   #{&}-logo {
     width: 300px;
   }
-  @include mobile {
-    flex-direction: column;
+  .li-font {
+    @include font();
+    width: 46%;
+    a {
+      text-decoration: none;
+    }
   }
-  #{&}-logo {
-    width: 220px;
+  @include mobile(column) {
+    #{&}-logo {
+      width: 250px;
+    }
   }
-}
-
-.country {
-  @include font();
 }

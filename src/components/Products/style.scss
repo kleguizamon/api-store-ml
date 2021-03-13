@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+@import '../../scss/function';
+
+.main-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+  p {
+    font-family: $primary-font;
+  }
+}

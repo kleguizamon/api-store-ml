@@ -1,3 +1,4 @@
+import './style.scss';
 import { Link } from 'react-router-dom';
 
 function Country(props) {
@@ -6,9 +7,9 @@ function Country(props) {
   return (
     <Link to={`/carousel/${code}`}>
       <img
-        src={`https://raw.githubusercontent.com/kleguizamon/api-store-ml/main/src/images/${flag}`}
+        src={`https://raw.githubusercontent.com/kleguizamon/api-store-ml/main/src/image/${flag}.png`}
         alt='flag'
-        className='imgFlag'
+        className='img-flag'
       />
       {` ${country}`}
     </Link>

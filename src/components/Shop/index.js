@@ -1,3 +1,4 @@
+import './style.scss';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Products from '../Products';
@@ -16,7 +17,7 @@ function Shop() {
   }
 
   return (
-    <section>
+    <section className='main-shop'>
       <Search callback={fetchApi} />
       <Products articles={products} />
     </section>

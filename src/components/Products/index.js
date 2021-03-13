@@ -1,12 +1,13 @@
+import './style.scss';
 import Card from '../Card';
 
 function Products(props) {
   const { results } = props.articles;
 
   return (
-    <section>
+    <section className='main-products'>
       {results === undefined ? (
-        <p>Busque un producto en el buscador :)</p>
+        <p>Busque un producto en el buscador</p>
       ) : (
         Object.keys(results).map((item, key) => {
           const { title, thumbnail, price, permalink } = results[item];

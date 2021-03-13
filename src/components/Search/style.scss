@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+@import '../../scss/function';
+
+.main-search {
+  @include flex(space-between, center);
+  background-color: $primary-color;
+  padding: 10px 10px;
+  font-family: $primary-font;
+  img {
+    width: 180px;
+    padding-left: 10px;
+  }
+  div input {
+    width: 250px;
+    height: 25px;
+    margin: 4px;
+    padding: 0px 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(167, 167, 167);
+  }
+
+  div button {
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    padding: 1px 6px;
+    color: white;
+    background-color: $color-button;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-hover-button;
+      transition: all 0.3s;
+    }
+  }
+  @include mobile(column);
+}

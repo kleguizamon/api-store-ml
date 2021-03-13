@@ -1,7 +1,9 @@
+import './style.scss';
+
 function Card(props) {
   const { title, thumbnail, price, permalink } = props;
   return (
-    <div>
+    <div className='card'>
       <a href={permalink} alt={title}>
         <img src={thumbnail} alt={title} />
         <div>
